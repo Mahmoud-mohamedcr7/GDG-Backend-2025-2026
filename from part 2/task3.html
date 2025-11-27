@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form target="_self" method="get">
+        <label for="user">username</label>
+        <input type="text" id="user" autofocus minlength="5" maxlength="20">
+         <label for="to">token</label>
+        <input type="hidden" id="to" value="b92f1fc2fce391ad7af633723afd3055" name="token">
+         <label for="em">Email</label>
+        <input type="email" id="em" value="o@o.com" readonly>
+        <input type="reset" value="Empty">
+        <button type="submit">send</button>
+        <label for="select">what is the lang. program ?</label>
+    <select name="skills" id="select">
+        <optgroup>skills</optgroup>
+        <option >Logical Thinking</option>
+        <option >Problem Solving</option>
+        <option >Advanced Search</option>
+        <option >Analysis</option>
+    </select>
+    <label for="sel">what is your job ?</label>
+    <select name="job" id="sel">
+        <optgroup>job</optgroup>
+        <option>backend</option>
+        <option>Front-End Developer</option>
+        <option>Business Analyst</option>
+    </select>
+    <hr>
+   <label for="choose">choose book :</label>
+    <select name="cho" id="choose">
+        <optgroup label="PhP">
+        <OPtion>v5.0</OPtion>
+        <OPtion>v7.0</OPtion>
+        <OPtion>v8.0</OPtion>
+    </optgroup>
+        <optgroup label="Python">
+        <option >v2.0</option>
+        <option >v3.0</option>
+        <option >v3.9</option>
+    </optgroup> <hr>
+    
+    </select>
+    </form>
+    <hr>
+    <label for="text"></label>
+    <textarea id="text" name="text" rows="4" cols="50">
+        Write Here Why You Want To Learn Programming
+    </textarea>
+    
+    
+</body>
+</html>
