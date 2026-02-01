@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+      font-family: Arial, serif;
+}
+h1, h2, h3{
+    color:black;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.text-primary{
+    color: burlywood;
+}
+.heading{
+    text-align: center;
+}
+.heading .text-primary{
+    font-size: 25px;
+}
+.heading h2{
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+/* header start*/
+.header{
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  border-bottom:1px solid #ccc ;
+}
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    height: 90px;
+}
+.header .navbar .logo{
+    width: 300px;
+}
+.header .navbar ul{
+    display: flex;
+    list-style: none;
+}
+.header .navbar ul li a{
+  color: lightslategray;
+    font-size: 18px;
+    margin: 0 20px;
+     text-decoration: none;
+    font-weight: 500;
+}
+.header .navbar ul li a:hover{
+    color: burlywood;
+    transition:all 0.3s  ease;
+}
+/* header end*/
+/*home start*/
+#home{
+    background: url(home-bg.png) center no-repeat;
+    background-size: 100% ;
+    background-color: #f1f1f1;
+}
+#home .home-content{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    min-height: 100vh;
+    gap: 2rem;
+    align-items: center;
+}
+#home .home-content .content-text h3{
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 400;
+}
+#home .home-content .content-text h1{
+    font-size: 70px;
+    margin: 20px 0;
+    line-height: 1.3;
+}     
+#home .home-content .content-text p{
+    font-size: 18px;
+    line-height: 1.5;
+}   
+#home .home-content .content-text .btn{
+    display: inline-block;
+    margin-top:2rem ;
+    background-color:burlywood ;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+#home .home-content .content-text .btn:hover{
+    background-color: rgb(69, 68, 68);
+    transition: all 0.3s ease;
+}
+#home .home-content img{
+    display: block;
+    width: 100%;
+}
+/*home end*/
+
+/*about start*/
+#about, .footer-top{
+    padding: 6rem 0;
+}
+#about .row{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 2rem;
+    align-items: center;
+}
+#about .row .about-content h2{
+     text-transform: uppercase;
+     font-size: 28px;
+     margin-bottom: 10px;
+}
+#about .row .about-content .item{
+    margin: 2rem 0;
+}
+#about .row .about-content h3{
+    margin: 5px;
+}
+/*about end*/
+/*menu start*/
+.menu{
+    background: rgba(195, 194, 194, 0.403);
+    padding: 6rem 0;
+}
+#menu .row {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    margin-top: 2rem;
+    gap: 5rem;
+}
+#menu .row .col .item{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    border: 2px solid #ddd;
+    padding: 25px 20px;
+    transition: all 1s ease-out;
+}
+#menu .row .col .item:hover{
+    border: 2px solid   rgba(112, 112, 199, 0.847);
+}
+#menu .row .col .item img{
+     width: 80px;
+     margin-left:-60px ;
+}
+#menu .row .col .item .detalis {
+    margin-left: 20px;
+}
+#menu .row .col .item .detalis h3{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+    margin-bottom: 10px ;
+}
+#menu .row .col .item .detalis p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+#menu .row .col .item .price{
+    border-left: 1px solid #eee;
+    padding: 20px;
+    margin: auto;
+}
+/*menu end*/
+/*testismonals start*/
+#testimonials, .contact{
+    padding: 6rem 0;
+}
+#testimonials .heading h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+}
+#testimonials .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 6rem;
+    gap: 2.5rem;
+}
+#testimonials .row .item{
+    background-color:rgba(128, 128, 128, 0.681) ;
+    border-radius: 5px;
+    text-align: center;
+    padding: 25px 25px 35px;
+    transition:1s ease-out;
+}
+#testimonials .row .item:hover{
+    border: 2px solid rgba(232, 98, 9, 0.851);
+}
+#testimonials .row img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -50%;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.5);
+}
+#testimonials .row .item h3{
+    margin: 20px 0 10px;
+    font-size: larger;
+}
+#testimonials .row .item p{
+    line-height: 1.6;
+}
+/*testismonals end*/
+/*contact start*/
+#contact {
+    background-color:rgba(128, 128, 128, 0.492) ;
+}
+#contact .row{
+    display: grid;
+    grid-template-columns: 2fr 1.4fr;
+    margin: 2rem;
+}
+#contact .row .contact-content{
+   background-color: #fff;
+   padding: 2.4rem;
+}
+#contact .row .contact-content h3{
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#contact .row .contact-content form input ,
+#contact .row .contact-content form textarea {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+#contact .row .contact-content .btn{
+    background-color:rgba(0, 0, 0, 0.907) ;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+#contact .row .contact-content .btn:hover{
+    background-color: burlywood;
+}
+#contact .map iframe{
+   width: 100%;
+   height: 100%;
+}
+/*contact end*/
+/*footer start*/
+#footer .footer-top{
+    background: url(footer-bg.png);
+    color: white;
+}
+#footer .footer-top .row{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+}
+#footer .footer-top .row h3{
+    margin-bottom: 15px;
+    color: #fff;
+}
+#footer .footer-top .row p{
+    width: 400px;
+    line-height: 1.6;
+}
+#footer .footer-top .row .col ul li{
+    margin: 10px;
+    list-style: none;
+}
+#footer .footer-top .row .col ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+#footer .footer-top .row .col ul li a:hover{
+    color: burlywood;
+}
+/*footer end*/
+#footer .copy-right{
+    background-color: rgb(62, 62, 62);
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+}
+#footer .copy-right p a {
+color: #fff;
+text-decoration: none;
+
+transition: all 0.3s ease;
+}
+#footer .copy-right p a:hover{
+    color: burlywood;
+}
